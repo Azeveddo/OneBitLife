@@ -1,6 +1,8 @@
 import React from "react";
-import {ScrollView, View, StyleSheet, Text} from "react-native-gesture-handler";
+import {ScrollView, View, StyleSheet, Text} from "react-native";
 
+import DefaultButton from "../../Components/Common/DefaultButton";
+import ExplanationCard from "../../Components/Explanation/ExplanationCard";
 
 
 export default function AppExplanation() {
@@ -16,6 +18,7 @@ export default function AppExplanation() {
                     <Text style={styles.title}>
                         Antes, deixa {"\n"} eu te explicar...
                     </Text>
+                    <ExplanationCard />
                     <Text style={styles.descriptionCta}>
                         Pronto(a) para subir de nível na vida?
                     </Text>
@@ -35,7 +38,7 @@ export default function AppExplanation() {
     );
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     container:{
         flex:1,
         backgroundColor:"rgba(21,21,21, 0.98)",

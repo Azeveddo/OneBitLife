@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, Touchable, TouchableOpacity } from "react-native";
+import {Text, StyleSheet, TouchableOpacity } from "react-native";
 
 export default function DefaultButton({
     buttonText,
