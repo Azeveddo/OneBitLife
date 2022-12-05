@@ -2,8 +2,10 @@ import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import{View, Text, StyleSheet, ScrollView} from "react-native";
 
+
 import LifeStatus from "../../Components/Common/LifeStatus";
 import StatusBar from "../../Components/Home/StatusBar";
+import CreateHabit from "../../Components/Home/CreateHabit";
 
 
 export default function Home(){
@@ -20,6 +22,7 @@ export default function Home(){
                         <Text style={styles.dailyChecks}>❤️ 20 dias - ✔️ 80 checks</Text>
                         <LifeStatus />
                         <StatusBar />
+                        <CreateHabit habitArea="Mente" borderColor= "#90B7F3" />
                     </View>
                     <Text
                         style={styles.explanationText}
